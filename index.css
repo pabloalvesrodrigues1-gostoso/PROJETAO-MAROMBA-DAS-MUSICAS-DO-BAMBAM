@@ -86,6 +86,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
+    align-items: flex-start;
 }
 .cartaz-lateral p{
     font-size: 22px;
@@ -102,4 +103,7 @@ a {
     font-size: 17px;
     font-family: var(--fonte-texto);
     cursor: pointer;
+}
+.botao:hover {
+    background: var(--caixa-dagua);
 }
