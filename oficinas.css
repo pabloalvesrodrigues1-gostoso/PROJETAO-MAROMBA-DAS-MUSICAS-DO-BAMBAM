@@ -39,7 +39,7 @@ h1, h2, h3 {
   padding-inline: 32px;
 }
 
-/* ===== TOPO (igual ao index) ===== */
+/* ===== TOPO ===== */
 .topo {
   padding-block: 28px;
   display: flex;
@@ -74,29 +74,31 @@ h1, h2, h3 {
   border-bottom-color: var(--fita);
 }
 
-/* ===== PÁGINA DE OFICINAS ===== */
+/* ===== TÍTULO E SUBTÍTULO ===== */
 .titulo-pagina {
-  font-size: 64px;
-  margin-top: 48px;
-  margin-bottom: 16px;
+  font-size: 160px;
+  margin-top: 24px;
 }
 
 .subtitulo-pagina {
-  max-width: 60ch;
-  margin-bottom: 40px;
+  font-size: 22px;
+  max-width: 640px;
+  margin-top: 16px;
 }
 
+/* ===== FILTROS ===== */
 .filtros {
+  margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 48px;
 }
 
 .filtro {
-  padding: 8px 16px;
   border: 2px solid var(--tinta);
+  padding: 8px 18px;
   font-weight: 600;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -105,52 +107,77 @@ h1, h2, h3 {
   color: var(--branco);
 }
 
+/* ===== LISTA DE OFICINAS ===== */
 .lista {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  margin-top: 40px;
 }
 
 .oficina {
   display: flex;
-  background-color: var(--branco);
-  border: 3px solid var(--tinta);
+  align-items: center;
+  gap: 40px;
+  padding-block: 32px;
+  border-top: 3px solid var(--tinta);
 }
 
 .oficina .foto {
   width: 240px;
-  min-height: 200px;
-  background-color: var(--concreto-escuro);
+  height: 170px;
   flex-shrink: 0;
+  background-color: var(--concreto-escuro);
 }
 
 .foto-azul {
   background-color: var(--caixa-dagua);
 }
 
-.oficina-texto {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.foto-amarela {
+  background-color: var(--fita);
 }
 
-.oficina-texto h2 {
-  font-size: 40px;
+.foto-tinta {
+  background-color: var(--tinta);
+}
+
+.oficina-texto {
+  flex: 1;
+}
+
+.oficina h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .etiquetas {
   display: flex;
-  gap: 12px;
-  margin-top: 8px;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .etiqueta {
+  background-color: var(--branco);
+  padding: 4px 12px;
   font-size: 14px;
   font-weight: 600;
-  padding: 4px 12px;
-  background-color: var(--concreto);
-  border: 1px solid var(--concreto-escuro);
+}
+
+/* ===== DETALHES DA OFICINA ===== */
+.oficina-detalhes {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.oficina-detalhes strong {
+  font-size: 17px;
+}
+
+.oficina-detalhes a {
+  margin-top: 10px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* ===== RODAPÉ ===== */
